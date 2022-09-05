@@ -1,0 +1,53 @@
+.header {
+  position: fixed;
+  top: 0;
+
+  width: 100%;
+  padding: 25px 0;
+
+  z-index: 100;
+
+  background-color: rgba($color: #fff, $alpha: .9);
+
+  font-size: 16px;
+
+  &__row {
+    display: flex;
+    align-items: center;
+    column-gap: 18px;
+  }
+
+  &__logo {
+    margin-right: auto;
+  }
+
+  &__nav {
+    flex-grow: 1;
+    align-items: center;
+
+  }
+
+}
+
+.nav {
+  display: flex;
+
+  &__list {
+    display: flex;
+    gap: 30px;
+
+    @media (max-width: 1000px) {
+      display: none;
+     }
+  }
+
+  &__link {
+    padding: 5px 0;
+    
+    transition: color .25s;
+    &:hover,
+    &:focus  {
+      color: #147E45;
+    }
+  }
+}

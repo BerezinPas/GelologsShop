@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('html/head.html', {
+    "title": "Home"
+  })
+  <body>
+    @@include('html/header.html', {})
+    <main>
+      <section class="itro">
+        <div class="container">
+          <div class="product">
+            <div class="product__row">
+              <div class="swiper product__swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide">
+                    <div class="product__slide">
+                      <div class="product__slide-img">
+                        <img src="@img/product1.jpg" alt="drill">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">Slide 2</div>
+                  <div class="swiper-slide">Slide 3</div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- If we need navigation buttons -->
+
+                <div class="swiper-button-prev">
+                  <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18.75 7.74998H3.925L8.4625 2.29998C8.67467 2.04471 8.77675 1.71561 8.74628 1.38507C8.7158 1.05454 8.55527 0.749652 8.3 0.537478C8.04473 0.325305 7.71563 0.223228 7.3851 0.253702C7.05456 0.284177 6.74967 0.444708 6.5375 0.699979L0.2875 8.19998C0.245451 8.25963 0.207849 8.3223 0.175 8.38748C0.175 8.44998 0.175 8.48748 0.0875002 8.54998C0.0308421 8.6933 0.0011764 8.84587 0 8.99998C0.0011764 9.15409 0.0308421 9.30665 0.0875002 9.44998C0.0875002 9.51248 0.0874998 9.54998 0.175 9.61248C0.207849 9.67765 0.245451 9.74032 0.2875 9.79998L6.5375 17.3C6.65503 17.4411 6.8022 17.5546 6.96856 17.6323C7.13491 17.7101 7.31636 17.7503 7.5 17.75C7.79207 17.7505 8.07511 17.6488 8.3 17.4625C8.42657 17.3575 8.5312 17.2287 8.60789 17.0832C8.68458 16.9378 8.73183 16.7787 8.74692 16.6149C8.76202 16.4512 8.74466 16.2861 8.69586 16.1291C8.64705 15.9721 8.56775 15.8263 8.4625 15.7L3.925 10.25H18.75C19.0815 10.25 19.3995 10.1183 19.6339 9.88386C19.8683 9.64944 20 9.3315 20 8.99998C20 8.66846 19.8683 8.35052 19.6339 8.1161C19.3995 7.88167 19.0815 7.74998 18.75 7.74998Z" fill="#DDE0E4"/>
+                    </svg>
+                    
+                </div>
+                <div class="swiper-button-next">
+                  <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.25 7.74998H16.075L11.5375 2.29998C11.3253 2.04471 11.2232 1.71561 11.2537 1.38507C11.2842 1.05454 11.4447 0.749652 11.7 0.537478C11.9553 0.325305 12.2844 0.223228 12.6149 0.253702C12.9454 0.284177 13.2503 0.444708 13.4625 0.699979L19.7125 8.19998C19.7545 8.25963 19.7922 8.3223 19.825 8.38748C19.825 8.44998 19.825 8.48748 19.9125 8.54998C19.9692 8.6933 19.9988 8.84587 20 8.99998C19.9988 9.15409 19.9692 9.30665 19.9125 9.44998C19.9125 9.51248 19.9125 9.54998 19.825 9.61248C19.7922 9.67765 19.7545 9.74032 19.7125 9.79998L13.4625 17.3C13.345 17.4411 13.1978 17.5546 13.0314 17.6323C12.8651 17.7101 12.6836 17.7503 12.5 17.75C12.2079 17.7505 11.9249 17.6488 11.7 17.4625C11.5734 17.3575 11.4688 17.2287 11.3921 17.0832C11.3154 16.9378 11.2682 16.7787 11.2531 16.6149C11.238 16.4512 11.2553 16.2861 11.3041 16.1291C11.3529 15.9721 11.4322 15.8263 11.5375 15.7L16.075 10.25H1.25C0.91848 10.25 0.600536 10.1183 0.366116 9.88386C0.131695 9.64944 0 9.3315 0 8.99998C0 8.66846 0.131695 8.35052 0.366116 8.1161C0.600536 7.88167 0.91848 7.74998 1.25 7.74998Z" fill="#DDE0E4"/>
+                    </svg>
+                    
+                </div>
+              </div>
+              <!-- <div class="product__slider"></div> -->
+              <h1 class="product__title">Профессиональное геологическое оборудование</h1>
+              <div class="product__info">
+                <div class="product__subtitle">Переносной мотобур для отбора ориентированных образцов ПМБ-2б</div>
+                <div class="product__text">
+                  <p>
+                    Ручной мотобур ПМБ-2б предназначен для отбора геологических, геофизических, геохимических и прочих проб, в частности для отбора ориентированных палеомагнитных кернов стандартного диаметра.
+                  </p>
+                </div>
+                <ul class="product__characteristics">
+                  <li>Бензиновый двигатель 50 см3</li>
+                  <li>Вес ~5 кг</li>
+                  <li>Габариты 28 × 44 × 34 см.</li>
+                  <li>Система охлаждения водяная.</li>
+                </ul>
+                <button class="product__btn btn" data-modal-open="#modalOrder">Купить</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="what">
+        <div class="container">
+          <h2 class="what__title">Чем мы занимаемся?</h2>
+          <div class="what__row">
+            <div class="what__inner">
+              <p class="what__text">
+                Компания Scientific Equipment занимается разработкой, проектированием и созданием механизмов различного назначения. Нашими основными направлениями деятельности являются работы в разработке высокотемпературного и вакуумного оборудования, а также механизированные системы с высокими требованиями к точности изготовления.
+              </p>
+              <a href="#" class="what__btn btn" >
+                Узнать подробнее
+              </a>
+            </div>
+            <div class="what__img">
+              <img src="@img/man.svg" alt="">
+            </div>
+          </div>
+        </div>
+        
+      </section>
+      <section class="recommendation">
+        <div class="container">
+        <h2 class="recommendation__title">
+          С этим товаром покупают :
+        </h2>
+        <div class="cards recommendation__cards">
+          <div class="card">
+            <div class="card__img">
+              <img src="@img/product2.jpg" alt="img">
+            </div>
+            <div class="card__info">
+              <div class="card__title">
+                Бак переносной с ручным насосом
+              </div>
+              <p class="card__text">
+                10-литровый бак для воды с ручным насосом. 
+              </p>
+              <button class="card__btn btn btn_white">
+                Купить
+              </button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__img">
+              <img src="@img/product3.jpg" alt="img">
+            </div>
+            <div class="card__info">
+              <div class="card__title">
+                Безрезьбовая буровая коронка с алмазным наконечником
+              </div>
+              <p class="card__text">
+                Буровая коронка из высокопрочной, немагнитной нержавеющей стали
+              </p>
+              <button class="card__btn btn btn_white">
+                Купить
+              </button>
+            </div>
+          </div>
+        </div>
+        </div>
+      </section>
+      <div class="container">
+        <section class="banner">
+          <div class="banner__row">
+            <div class="banner__content">
+              <h2 class="banner__title">
+                Остались вопросы?
+              </h2>
+              <div class="banner__text">
+                Закажите обратный звонок, с вами свяжется менеджер и всё объяснит
+              </div>
+            </div>
+            <div class="banner__btns">
+              <button class="banner__btn btn" data-modal-open="#modalOrder">Заказать звонок</button>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    @@include('html/footer.html')
+    <script src="js/app.js"></script>
+  </body>
+</html>

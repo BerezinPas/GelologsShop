@@ -1,0 +1,31 @@
+{
+  "name": "sablon-v2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "type": "module",
+  "scripts": {
+    "dev": "gulp",
+    "build": "gulp build --build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Pasha",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "latest",
+    "del": "latest",
+    "gulp": "latest",
+    "gulp-file-include": "latest",
+    "gulp-if": "latest",
+    "gulp-rename": "latest",
+    "gulp-replace": "latest",
+    "gulp-sass": "latest",
+    "sass": "latest",
+    "webpack": "latest",
+    "webpack-stream": "latest"
+  },
+  "dependencies": {
+    "imask": "^6.4.2",
+    "swiper": "^8.3.2"
+  }
+}
